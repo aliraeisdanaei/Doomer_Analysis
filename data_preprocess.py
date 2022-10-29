@@ -1,10 +1,11 @@
 
 import pandas as pd
 import json
-import snscrape
+import os
 
-filename = "doomer_scraped_18_10_2022.json"
-filename_proc = "doomer_scraped_18_10_2022_proc.json"
+latest_date = "29_10_2022"
+filename = f"Data/doomer_scraped_{latest_date}.json"
+filename_proc = f"Data/doomer_scraped_{latest_date}_proc.json"
 
 
 def preprocess(filename: str, filename_proc: str):
@@ -30,6 +31,3 @@ def preprocess(filename: str, filename_proc: str):
 
 if(__name__ == "__main__"):
 	preprocess(filename, filename_proc)
-
-
-
