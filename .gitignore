@@ -6,4 +6,5 @@ time
 *.latexmk
 *.fls
 *.log
-*.syncrex.gz
+*.synctex.gz
+*.fdb_latexmk
