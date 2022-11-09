@@ -1,3 +1,9 @@
 time
 *json
 .*checkpoints
+.vscode
+*.aux
+*.latexmk
+*.fls
+*.log
+*.syncrex.gz
