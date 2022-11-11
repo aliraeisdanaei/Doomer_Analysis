@@ -8,3 +8,10 @@ time
 *.log
 *.synctex.gz
 *.fdb_latexmk
+*sample_post.txt
+sample_post.txt
+*.bcf
+*.run.xml
+*.bbl
+*.blg
+*.out
