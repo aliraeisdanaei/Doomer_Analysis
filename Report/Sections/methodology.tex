@@ -1,5 +1,4 @@
 \documentclass[../report.tex]{subfiles}
-\graphicspath{{\subfix{../Images/}}}
 
 \addbibresource{../references.bib}
 
@@ -8,25 +7,25 @@
 \subsection{The Data}
 The best place to study the doomer is its subforum on Reddit, /r/doomer. To compare the doomer with other similar characteristics, the subforums of, /r/lonely, /r/loneliness, and /r/depression were also scraped.
 
-All the data was filtered for posts that were of greater length than 500. The data is described in table 1. 
+All the data was filtered for posts that were of greater length than 500. The data is described in table \ref{tab:metadata}.
 
+\begin{table}[h]
+    \centering
+    \begin{tabular}[]{c | c | c | c | c | c | c}
+        \toprule
+        Subreddit & N. of Posts $\ge$ 500 words & Earliest & Oldest & Ave. Post Length & N. of Users \\
+        \midrule
+        /r/doomer & 1000 & 2002 & 2020 & 600 & 1000 \\
+        /r/lonely & 1000 & 2002 & 2020 & 600 & 1000 \\
+        /r/loneliness & 1000 & 2002 & 2020 & 600 & 1000 \\
+        /r/depression & 1000 & 2002 & 2020 & 600 & 1000 \\
+        \bottomrule
+    \end{tabular}
 
-\begin{center}
-\begin{tabular}{|c|p{6cm}|}
-    \hline
-    Num & Top Aligned Paragraph\\
-    \hline
-    1 & Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \\
-    \hline
-    12 & Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. \\
-    \hline
-    123 & Curabitur dictum gravidamauris. \\
-    \hline
+    \caption{Metadata}
+    \label{tab:metadata}
+\end{table}
 
-\end{tabular}
-
-\caption{test}
-\end{center}
 
 
 \end{document}
