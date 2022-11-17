@@ -5,6 +5,7 @@ time
 *.aux
 *.latexmk
 *.fls
+*.lot
 *.log
 *.synctex.gz
 *.fdb_latexmk
