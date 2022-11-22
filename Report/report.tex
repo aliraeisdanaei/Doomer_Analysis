@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{float}
 \usepackage[]{graphicx}
 \graphicspath{{Images/}}
 \usepackage{hyperref}
@@ -13,6 +14,8 @@
 
 \usepackage{pgf-pie}  
 
+\usepackage{tabularx}
+
 \begin{document}
 \pagenumbering{arabic}
 
@@ -20,6 +23,7 @@
 \author{Ali Raeisdanaei}
 \maketitle
 
+\begin{multicols}{2}
 \section{Introduction}
 \subfile{Sections/introduction}
 
@@ -34,6 +38,8 @@
 
 \section{Conclusion}
 \subfile{Sections/conclusion}
+
+\end{multicols}
 
 \printbibliography
 
