@@ -35,7 +35,7 @@ Doom is the notion that the world is hopelessly going to be extinct.
 Our civilisation is bound to collapse, and the doomers see it clearly.
 The world is doomed, and the doomers are the outcasts who are first experiencing this. 
 Thus, their nihilism can be seen to arise from this doom. 
-There was a simple poetry to the doom of the doomer; a sample of this is given in the \ref{appendix}.
+There was a simple poetry to the doom of the doomer; a sample of this is given in section \ref{appendix}.
 
 The second-biggest theme that arose from the manual inspection was \textbf{loneliness} and \textbf{\textit{no gf}}. 
 I will be using this term to refer to being single (having no girlfriend).
@@ -95,9 +95,41 @@ Although, all the problems the users of these Subreddits were dealing were serio
 The doomer is, by far, the most dark and nihilistic of the other groups. In this regard he is distinct. 
 
 \subsection{Frequency Analysis of Themes}
+The posts were analysed for their frequencies; the word-clouds produced by each of the Subreddits can be seen in section \ref{appendix}.
+
+Motivated by the themes identified in the manual inspection, a list of keywords that would identify these themes were compiled. 
+They can be seen in table \ref{tab:keywords}.
+These words were then searched through the corpus of posts by using regular expressions.
+
+The number of words found from a given them was then expressed as a percentage of all the keywords matched.
+In such a way each category received its composition as a percentage of causes, the results of which can be seen in table \ref{tab:composition}.
+Other visualisations of these compositions can also be seen in section \ref{appendix}.
+
+The results of these compositions support the findings of the manual inspection. 
+The doomers are much more nihilistic and the users of /r/depression more medical.
+The theme of doom was only seen, unsurprisingly, by the doomer; although, this was still a low percentage of composition for the doomer. 
+The doomer is more nihilistic than he is obsessed with the \textit{doom}.
+
+The prevelance of drugs is much less than suggested by \cite*{twitter_loneliness}, only being high as 2.25\%.
+The two loneliness forums were similar in compositions as suggested by the manual inspection. 
+Both have much higher levels of loneliness as compared to the other categories. 
+
+In all other themes, the categories were very similar. 
+
 \subfile{table_frequency}
 
 \subsection{Classification of Individual Posts}
+The composition of the categories was used as a vector. 
+The same approach of finding the prevalence of keywords by themes were used on individual posts.
+This prevalence was also used as a vector to measure the similarity of the posts to the average posts of each category. 
+
+The similarity function used was a modified version of the euclidean norm: in this function, the components of the vectors that were different across the categories had a higher degree. 
+
+Then a post would be blindly classified to the category in which its composition was most similar. 
+The results of this classification can be seen in table \ref{tab:pred_results}.
+This approach shows us the individual deviation of the posts and if the doomer can be correctly classified individually against the other categories.
+
+
 \subfile{table_predictions}
 	
 \end{document}
