@@ -1,0 +1,57 @@
+\documentclass[../report.tex]{subfiles}
+\addbibresource{../references.bib}
+
+\begin{document}
+
+\begin{table*}[ht]
+    \centering
+   \begin{tabular}{| l | c | c |c | c | c | c | c | c |}
+    \toprule
+    {} & /r/doomer & /r/lonely & /r/loneliness & /r/depression & no match found \\ 
+    \midrule
+ /r/doomer & 326 & 310 & 466 & 895 & 19 \\ 
+ /r/lonely & 30 & 848 & 2287 & 1012 & 12 \\ 
+/r/loneliness & 77 & 527 & 1487 & 411 & 3 \\
+/r/depression & 375 & 822 & 1057 & 4734 & 15 \\
+
+    \bottomrule
+   \end{tabular} 
+
+   \caption{Results of simple prediction based on the composition of themes. The horizontal axis represents the category predicted. The vertical represents the actual category.}
+   \label{tab:pred_results}
+\end{table*}
+
+\begin{table}[H]
+    \centering
+   \begin{tabular}{| l | c | c |c |}
+    \toprule
+    {} & \multicolumn{1}{p{1cm}|}{correct pred.} & \multicolumn{1}{p{1cm}|}{in-correct pred.} & \multicolumn{1}{p{1cm}|}{binary accuracy} \\
+    \midrule
+ /r/doomer & 1895 & 1102 & 0.632\\ 
+ /r/lonely & 3190 & 1787 & 0.64\\ 
+/r/loneliness & 2032 & 770 & 0.72\\
+/r/depression & 6452 & 2536 & 0.71 \\
+    \bottomrule
+   \end{tabular}
+
+   \caption{Results of binary prediction based on the composition of themes}
+   \label{tab:binary_pred_results}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+   \begin{tabular}{| l | c | c |c |}
+    \toprule
+    {} & /r/lonely & /r/loneliness & accuracy \\ 
+    \midrule
+/r/lonely & 2690 & 2287 & 0.54 \\
+/r/loneliness & 1315 & 1487 & 0.53 \\
+    \bottomrule
+   \end{tabular}
+
+   \caption{Results of binary prediction between the loneliness forums}
+   \label{tab:loneliness_pred_results}
+\end{table}
+
+\end{document}
