@@ -1,6 +1,3 @@
+This project was done for my class, Topics in Computational Social Science. 
 
-What is doomer culture?
-    Is it synonymous with youth emotional loneliness
-Is this a totally new phenomenon?
-    - Are its causes new
-    - Are there statistics of loneliness, suicide, .. that can prove that it is a new thing
+Please read through the report to see what it is all about. 
