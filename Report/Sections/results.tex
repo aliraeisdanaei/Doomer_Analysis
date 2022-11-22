@@ -49,37 +49,37 @@ There was a simple poetry to the doom of the doomer. Here is a sample written by
 \end{quotation}
 
 \begin{multicols}{2}
-\begin{quotation}
-    \noindent
-    An exiled hermit\\
-    These desolate plains I roam\\
-    From the cosmic infancy\\
-    I float like a lost comet\\
-    Drifting through empty space\\
-    Deprived of self\\
-    I find solace within painful memory\\
-    Of my sadistic lover,\\
-    Life\\
-    The ghost of ecstasy\\
-    Lurking in the sorrows\\
-    Which belong to me alone\\
-    To serve as the gate to the firmament\\
-    And contain the flames of agony\\
-    In which I've forged the poisoned knife\\
-    With which I'll put the suicidal god\\
-    Out of its eternal misery\\
-    Before abandoning the heavens\\
-    Consumed by the flames of my passion\\
-    Casting a shadow to eclipse the sun\\
-    Burning brighter than the morning star\\
-    At the edges of the dawn\\
-    To break free from the chains of blind devotion\\
-    devouring the minds of man\\
-    That shall signal the inevitable collapse of tyranny\\
-    Of paradise and hell\\
-    Born out our asymmetry\\
-    In ascendancy\\
-\end{quotation}
+	\begin{quotation}
+		\noindent
+		An exiled hermit\\
+		These desolate plains I roam\\
+		From the cosmic infancy\\
+		I float like a lost comet\\
+		Drifting through empty space\\
+		Deprived of self\\
+		I find solace within painful memory\\
+		Of my sadistic lover,\\
+		Life\\
+		The ghost of ecstasy\\
+		Lurking in the sorrows\\
+		Which belong to me alone\\
+		To serve as the gate to the firmament\\
+		And contain the flames of agony\\
+		In which I've forged the poisoned knife\\
+		With which I'll put the suicidal god\\
+		Out of its eternal misery\\
+		Before abandoning the heavens\\
+		Consumed by the flames of my passion\\
+		Casting a shadow to eclipse the sun\\
+		Burning brighter than the morning star\\
+		At the edges of the dawn\\
+		To break free from the chains of blind devotion\\
+		devouring the minds of man\\
+		That shall signal the inevitable collapse of tyranny\\
+		Of paradise and hell\\
+		Born out our asymmetry\\
+		In ascendancy\\
+	\end{quotation}
 \end{multicols}
 
 The second biggest theme that arose from the manual inspection was \textbf{loneliness} and \textbf{\textit{no gf}}. 
@@ -139,5 +139,48 @@ Although, all the problems the users of these Subreddits were dealing were serio
 
 The doomer is, by far, the most dark and nihilistic of the other groups. In this regard he is distinct. 
 
+\subsection{Frequency Analysis of Themes}
 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l | c | c | c | c}
+        \toprule
+        themes & /r/doomer & /r/lonely & /r/loneliness & /r/depression \\
+		\midrule
+		 nihilism &               18.90 &                 9.90 &                 9.59 &             13.07 \\
+			 doom &                2.73 &                 0.22 &                 0.13 &              0.30 \\
+			alone &               17.48 &                31.13 &                33.60 &             15.03 \\
+		  medical &                5.97 &                 5.93 &                 5.74 &             12.39 \\
+	 relationship &               12.90 &                15.20 &                14.02 &             10.66 \\
+		childhood &               10.76 &                 8.90 &                 9.40 &             12.13 \\
+			  job &                5.68 &                 4.42 &                 4.26 &              6.54 \\
+	mental health &               11.25 &                 8.93 &                 8.68 &             16.88 \\
+			drugs &                2.25 &                 0.76 &                 0.81 &              1.27 \\
+	social issues &                7.10 &                11.15 &                10.30 &              6.20 \\
+ responsibilities &                4.99 &                 3.47 &                 3.45 &              5.54 \\
+		\bottomrule
+	\end{tabular}
+
+    \caption{Composition of Themes}
+    \label{tab:composition}
+\end{table}
+
+\begin{tikzpicture}
+	\pie{
+		18.90/nihilism,
+		2.73/doom,
+		17.48/alone,
+		5.97/medical,
+		12.90/relationship,
+		10.76/childhood,
+		5.68/job,
+		11.25/mental health,
+		2.25/drugs,
+		7.10/social issues,
+		4.99/responsibilities
+	}
+		\/ption{Composition of the Doomer}
+		\label{pie:comp_doomer}
+	\end{tikzpicture}
+	
 \end{document}
