@@ -19,3 +19,4 @@ sample_post.txt
 Data/*
 *.synctex(busy)
 Articles
+.~lock*
