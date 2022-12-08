@@ -4,20 +4,41 @@
 \begin{document}
 
 \subsection{The Data}
-The best place to study the Doomer is its subforum on Reddit, /r/Doomer. To compare the Doomer with other similar characteristics, the subforums of, /r/lonely, /r/loneliness, and /r/depression were also scraped.
+The best place to study the Doomer is its subforum on Reddit, /r/Doomer. To compare the Doomer with other similar categories, the subforums of, /r/lonely, /r/loneliness, and /r/depression were also scraped.
 
 All the data was filtered for posts that were of greater length than 500. The data is described in table \ref{tab:metadata}.
-The users of Reddit, and specifically these Subreddits, skew towards young, English-speaking, males. 
+
+\subsubsection{The Users}
+The users of the internet, Reddit, and specifically these Subreddits, skew towards young, English-speaking, males. 
+Some posters include their age and gender information.
+This is really rare, but to understand the users, this information was extracted using regular expressions.
+The results of this can be seen in tables \ref{tab:ages} and \ref{tab:gender}.
+
+\subsection{The Commonality of the users}
+The users of these Subreddits were generally unique.
+That is, only a few Doomers posted in the other forums. 
+% This is our first evidence for the Doomers being a distinct identity. 
+
+The number of unique users of each of the Subreddits were greater than a thousand; however, the common users between the Doomers and the other Subreddits were very low. 
+There were only 13, 6, 14 common users between /r/Doomer, /r/lonely, /r/loneliness, and /r/depression respectively. 
+
+The greatest number of common users were actually not between /r/lonely and /r/loneliness, 31. 
+The greatest commonality was between /r/depression and /r/lonely, 161, suggesting that lonely people are generally depressed and vice-versa.
+
+There were no common users between all the Subreddits.
+Only 2 common users existed between /r/Doomer, /r/depression, /r/lonely, and Only 2 common users between /r/Doomer, /r/depression, /r/loneliness.
+
 \subfile{table_metadata}
 
 \subsection{Approach}
 To start off, the posts were manually examined by a human to identify some causes and themes from the different Subreddits. 
 This approach is similar to Fardghassemi's analysing of the interviews \cite{fardghassemi_interviews}.
 
-When the causes have then been identified from the manual approach, a list of terms will be identified.
+When the causes have were identified from the manual approach, a list of terms was identified.
 These terms will be analysed for their frequencies in a similar approach to the work of Guntuku \cite{twitter_loneliness}.
-If terms pertaining to one cause always have a higher frequency than another in one Subreddit over another, it is clear that cause is more prevalent. 
 
-Thirdly, a composition of the causes are created for a Doomer, lonely person, and depressed person, as the measure of the frequency of the terms in the corpus of posts. This data could be used to train a model to classify a Doomer from the other categories. This would answer the research question of the Doomer having a distinct and novel identity.
+Thirdly, a composition of the causes are created for each category, as the measure of the frequency of the terms in the corpus of posts.
+This data could be used to train a model to classify a Doomer from the other categories understanding the individual post diversity of the categories and their similarities.
+% This would answer the research question of the Doomer having a distinct and novel identity.
 
 \end{document}
